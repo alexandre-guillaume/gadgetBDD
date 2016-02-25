@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+   <ModulePrefs title="Gadget d'Alimentation de la Base de Données" title_url="http://www.soprasteria.com/" directory_title="Gadget Sopra" 
+   author="Brandon Gommard" 
+   author_email="brandon.gommard@soprasteria.com" author_affiliation="Sopra Steria" 
+   author_link="http://www.soprasteria.com" description="Ce gadget va se connecter au Google Analytics spécifié dans 
+   ses paramètres et il va ensuite effectuer les requêtes sur les métriques également spécifiées en paramètre. 
+   Il ira ensuite stocker le resultat de ces requêtes dans la base de données" 
+   author_photo="/GadgetAlimentationBDD/soprasteria.png" screenshot="/GadgetAlimentationBDD/bdd.jpg" thumbnail="/GadgetAlimentationBDD/bdd.jpg" scrolling="true">
+   </ModulePrefs>
+   <UserPref name="listeObjectifs"
+   			 display_name="Liste des Objectifs"
+   			 datatype="string"
+   			 urlparam="id1"
+   			 required="true" 
+   			 default_value="goal1Completions;goal4Completions;goal7Completions"/>
+   <UserPref name="siteAsuivre"
+   			 display_name="Identifiant du Site à suivre"
+   			 datatype="string"
+   			 urlparam="id2"
+   			 required="true" 
+   			 default_value="ga:35918330"/>
+   	<UserPref name="dbTable"
+   			 display_name="Table où stocker les données"
+   			 datatype="string"
+   			 urlparam="id3"
+   			 required="true" 
+   			 default_value="mma"/>
+   	<UserPref name="dbUser"
+   			 display_name="User de la base de données"
+   			 datatype="string"
+   			 urlparam="id4"
+   			 required="true" 
+   			 default_value="mmawrite"/>
+   	<UserPref name="dbPass"
+   			 display_name="Mot de Passe de la base de données"
+   			 datatype="string"
+   			 urlparam="id5"
+   			 required="true" 
+   			 default_value="coveamma"/>
+   <Content type="url" href="/GadgetAlimentationBDD/AlimentationBDD">
+   </Content>
+</Module>
